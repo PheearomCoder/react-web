@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import Card from '../components/Card'
 import LoadingView from '../components/LoadingView'
 import { Link } from 'react-router-dom'
-import { fetchProducts } from '../services/productAction'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchAllCategories, fetchAllProducts } from '../redux/actions/productActions'
 
@@ -45,6 +44,7 @@ export default function Home() {
                                 <Card 
                                     imageURL={p.images[0]}
                                     title={p.title}
+                                    price={p.price}
                                 />
                             </Link>
                         </div>

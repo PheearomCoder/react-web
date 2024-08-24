@@ -1,4 +1,4 @@
-function Card({imageURL, title}){
+function Card({imageURL, title, price}){
     return(
         <>
             <div className="card h-100 shadow-sm border-0">
@@ -7,7 +7,10 @@ function Card({imageURL, title}){
                     className="card-img-top" alt="card image" 
                 />
                 <div className="card-body">
-                    <h2 className="card-text">{title}</h2>
+                    <h4 className="card-text">{title}</h4>
+                </div>
+                <div className="card-body">
+                    <h4 className="card-text">{price}</h4>
                 </div>
             </div>
         </>
